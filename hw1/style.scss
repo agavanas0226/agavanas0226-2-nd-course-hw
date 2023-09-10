@@ -34,10 +34,7 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: 32px;
-    width: 481px;
     padding-bottom: 44px;
-    display: flex;
-    flex-wrap: wrap;
 }
 .top__button{
     border-radius: 30px;
@@ -58,31 +55,21 @@ body {
     gap: 32px;
     grid-template-columns: repeat(3, 1fr);
     background: #000915;
-    
 }
 .game__item{
-    display: flex;
-    line-height: normal;
-    grid-row: span 3;
     color: #FFF;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 32px; 
+    line-height: 32px;
     width: 379px;
     height: 300px;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: flex-end;
+    position: relative;
 }
-.game__item1{
-    background-image: url(img/game1.png);
-}
-.game__item2{
-    background-image: url(img/game2.png);
-}
-.game__item3{
-    background-image: url(img/game3.png);
+.game__name{
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
 }
 
