@@ -1,5 +1,6 @@
 
-let n = 20;
+let n = 10; 
+n = 20;
 alert (n);
 const i = 2007;
 alert(i);
@@ -19,12 +20,12 @@ let a = 9;
 let b = 2;
 alert(a%b);
 let num = 1;
-num = num + 5;
-num = num - 3;
-num = num * 7;
-num = num / 3;
-num = num + 1;
-num = num - 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++ ;
+num--;
 alert(num);
 let age = prompt("Сколько вам лет?");
 alert(age);
@@ -33,13 +34,13 @@ const user = {
     age: 21,
     isAdmin:true,
 };
-user[`city of residence`]=true;
+user["city of residence"]=true;
 alert(user.name);
 alert(user.age);
 alert(user.isAdmin);
-alert([`city of residence`]);
+alert(["city of residence"]);
 user.age=50;
 alert(user.age);
-delete user[`city of residence`];
+delete user["city of residence"];
 let info = prompt("Как вас зовут?");
 alert(`Привет, ${info}!`);
