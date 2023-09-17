@@ -85,4 +85,120 @@ body {
     left: 32px;
     bottom: 32px;
 }
+.game_time{
+    background: #000915;
+    display: flex;
+    gap: 135px;
+    padding-bottom: 233px;
+    padding-top: 233px;
+    &_op{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 49px;
+    }
+    &__title{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &_mob{
+            display: none;
+        }
+    }
+    
+    &_text{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        width: 584px;
+        &__mob{
+            display: none;
+        }
+    }
+    &__button{
+        border-radius: 30px;
+        background: #9C0332;
+        width: 234px;
+        height: 48px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__button:hover{
+        background: #EB443F;
+        cursor: pointer;}
+    &_img{
+        width: 485px;
+        height: 333px;
+    }
+    
+}
+.game_word{
+    background: #000915;
+    padding-top: 239px;
+    padding-bottom: 239px;
+    display: flex;
+    gap: 135px;
+    &_op{
+        gap: 32px;
+        padding-top: 43px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;      
+    }
+    &_img{
+        width: 481px;
+        height: 322px;
+        &_mob{
+            display: none;
+        }
+    }
+    &_text{
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px; 
+        width: 588px;
+        &__mob{
+            display: none;
+        }
+    }
+    &__button{
+        border-radius: 30px;
+        background: #9C0332;
+        width: 240px;
+        height: 48px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &_mob{
+            display: none;
+        }
+    }
+    &__button:hover{
+        background: #EB443F;
+        cursor: pointer;}
+}
+
 @import 'mob' ;
