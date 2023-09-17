@@ -61,6 +61,7 @@ body {
 
 .top__button:hover {
   background: #EB443F;
+  cursor: pointer;
 }
 
 .game-box {
@@ -87,6 +88,8 @@ body {
 .game__item:hover {
   border: 3px solid #44D2FF;
   border-radius: 16px;
+  cursor: pointer;
+  width: 100%;
 }
 
 .game__name {
