@@ -9,14 +9,12 @@ let k = 1;
 while (k <= 5){
     console.log (k);
     k++;
-    break;
 }
 // Задание 3
 let m = 7;
 while (m <= 22) {
     console.log (m);
     m++ ;
-    break;
 }
 // Задание 4
 const obj = {
@@ -35,8 +33,7 @@ for (let n = 1000, lot = 0; n > 50; lot++) {
 };
 // Задание 6
 let d = 6;
-while( d <=31, d++) {
-    d += 6;
+while( d <=31) {
     console.log(`Сегодня пятница, ${d}-е число. Необходимо подготовить отчет.` );
-    break;
+    d += 7;
 }
