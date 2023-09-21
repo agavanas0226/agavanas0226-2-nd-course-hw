@@ -215,6 +215,70 @@ body {
   cursor: pointer;
 }
 
+.game_riddles {
+  background-image: url(img/back_game.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 276px;
+  padding-bottom: 288px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.game_riddles__title {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.game_riddles_text {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.game_riddles_text_mob {
+  display: none;
+}
+.game_riddles_button {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: #9C0332;
+  display: block;
+  margin: 0 auto;
+}
+.game_riddles_button:hover {
+  background: #EB443F;
+  cursor: pointer;
+}
+
+.footer {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #000915;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 171px);
@@ -373,5 +437,38 @@ body {
     border-radius: 30px;
     background: #9C0332;
     margin: 0 auto;
+  }
+  .game_riddles {
+    padding-top: 51px;
+    padding-bottom: 487px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+  .game_riddles__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .game_riddles_text {
+    display: none;
+  }
+  .game_riddles_text_mob {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .footer {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

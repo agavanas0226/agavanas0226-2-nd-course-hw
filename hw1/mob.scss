@@ -158,4 +158,37 @@
             }
         }
     }
+    .game_riddles{
+        padding-top: 51px;
+        padding-bottom: 487px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+        &__title{
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        &_text{
+            display: none;
+            &_mob{
+                display: block;
+                color: #FFF;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+    }
 }
