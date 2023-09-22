@@ -1,36 +1,30 @@
 // Задание 1
-let a = 8;
-let b = 4;
 function min(a, b) {
    
-    if (a < b) {
+    if (a < b || a === b) {
       return console.log('a');
     } 
-    
-    else if (a == b){
-        return console.log('b');
-    }
 
      else {
         return console.log('b');
     }
   };
 
-  min()
+  console.log(min(10, 8))
 // Задание 2
 let r = Number(prompt('Введите число'))
 
 function even() {
     if (r % 2 === 0) {
-        return alert('Число четное')
+        return ('Число четное')
 
     } else {
-        return alert('Число нечетное')
+        return('Число нечетное')
         
     }
 }
 
-even()
+console.log(even())
 
 // Задание 3.1
 
@@ -52,59 +46,51 @@ function nameQua1(){
     let numQua1 = prompt("Введите число");
     
     if(!isNaN(numQua1)){
-        return console.log(`${numQua1 ** 2}`);
+        return (`${numQua1 ** 2}`);
     }
 
     else {
-        return console.log("Переданный параметр не является числом");
+        return("Переданный параметр не является числом");
     }
 }
-nameQua1()
+console.log(nameQua1())
 // Задание 4
-let age = prompt("Сколько вам лет?");
-
-if (age < 12) {
-    function printMessage(){
+function printMessage(){
+const age = prompt("Сколько вам лет?");
+if (age < 0) {
+    console.log("Вы ввели неправильное значение!");
+}
+else if (age < 12 && 0 < age) {
         console.log("Привет, друг!");
-    }
-}
-
-else if (age < 0) {
-    function printMessage() {
-        console.log("Вы ввели неправильное значение!");
-    }
-}
+} 
 
 else {
-    function printMessage(){
         console.log("Добро пожаловать!");
-    }
 }
-
+}
 printMessage();
 // Задание 5
 function twoNumbers(c, d) {
     if (isNaN(c) || isNaN(d)) {
-      return console.log('Одно или оба значения не являются числом');
+      return ('Одно или оба значения не являются числом');
     } 
     else {
-      return console.log('c * d');
+      return c * d;
     }
   }
-  
-  twoNumbers()
+  console.log(twoNumbers(4, 15))
 // Задание 6
 function nameNum(){
     let numCube = prompt("Введите число");
     if(!isNaN(numCube)){
-        return console.log(`${numCube} в кубе равняется ${numCube ** 3}`);
+        return (`${numCube} в кубе равняется ${numCube ** 3}`);
     }
 
     else {
-        return console.log("Переданный параметр не является числом");
+        return ("Переданный параметр не является числом");
     }
 }
-nameNum()
+console.log(nameNum())
 // Задание 7
 const circle1 = {
     radius: 2,
