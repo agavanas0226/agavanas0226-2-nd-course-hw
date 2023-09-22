@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
   .center {
-    padding-left: calc(50% - 171px);
-    padding-right: calc(50% - 171px);
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .top {
     background-image: url(img/back.mob.png);
@@ -50,10 +50,14 @@
     flex-wrap: wrap;
     display: flex;
     width: 100%;
+    justify-content: center;
   }
   .game__item {
     width: 343px;
     height: 300px;
+  }
+  .img_game {
+    width: 100%;
   }
   .game_time {
     width: 100%;
@@ -62,6 +66,7 @@
     padding-bottom: 85px;
     padding-top: 51px;
     gap: 64px;
+    align-items: center;
   }
   .game_time_img {
     width: 344px;
@@ -106,6 +111,7 @@
     gap: 64px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .game_word__title {
     color: #FFF;
@@ -156,5 +162,39 @@
     border-radius: 30px;
     background: #9C0332;
     margin: 0 auto;
+  }
+  .game_riddles {
+    padding-top: 51px;
+    padding-bottom: 487px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    align-items: center;
+  }
+  .game_riddles__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .game_riddles_text {
+    display: none;
+  }
+  .game_riddles_text_mob {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .footer {
+    width: 100%;
   }
 }/*# sourceMappingURL=mob.css.map */
