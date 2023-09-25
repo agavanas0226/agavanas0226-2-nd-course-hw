@@ -78,7 +78,6 @@ body {
     border: 3px solid #44D2FF;
     border-radius: 16px;
     cursor: pointer;
-    width: 100%;
 }
 .game__name{
     position: absolute;
@@ -262,4 +261,4 @@ body {
     padding-bottom: 32px;
     background: #000915;
 }
-@import 'mob' ;
+@import '_mob' ;
