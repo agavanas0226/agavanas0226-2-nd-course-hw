@@ -10,7 +10,7 @@ let find = [1, 5, 4, 10, 0, 3];
 find = find.indexOf(4);
 console.log(find);
 // Задание 3
-let jhoJho = [1, 3, 5, 10, 20];
+let jhoJho = [1,'', 3,'', 5,'', 10,'', 20];
 jhoJho = jhoJho.join('');
 console.log(jhoJho);
 // Задание 4
@@ -35,19 +35,14 @@ fifth.push(2, 2, 2);
 console.log(fifth);
 // Задание 6
 let sea = [9, 8, 7, 'a', 6, 5];
-sea = sea.sort();
-delete sea[5];
+sea = sea.sort().splice(0,5);
+
 console.log(sea);
 // Задание 7
 let gameNumbers = [9, 8, 7, 6, 5];
 let question = Number(prompt('Угадайте число'));
-for (let question of gameNumbers) {
-    if (question === gameNumbers){
-	console.log('Угадал')}
-    else {
-        console.log('Не угадал')
-    };
-}
+(gameNumbers.includes(question)) ? alert('Угадал') : alert('Неугадал');
+
 // Задание 8
 let alphabet = 'abcdef';
 let reverse = Array.from(alphabet).reverse().join();
@@ -66,14 +61,28 @@ for (let i = 0; i < numBers.length - 1; i++) {
   console.log("Сумма", numBers[i], "и", numBers[i + 1], "равна", sum); 
 }
 // Задание 11
+let panck = [1, 15, 26, 100];
+let double = panck.map((num) =>{
+    return num * num 
+  })
 
+console.log(double)
 // Задание 12
-let  getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква'] ; 
-function score(getLengthWords){
-  let sum = 0;
+function countOfWordsOf5Letters(){
+  let  getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква'] ; 
 
-    return sum;
+  return getLengthWords.map(({length}) => length);
   }
-
-console.log(score(getLengthWords)); 
+console.log(countOfWordsOf5Letters()) 
 // Задание 13
+  const arr = [-1, 0, 5, -10, 56];
+  function filterPositive(arr){
+    let negatives = [];
+    for (let m = 0; m < arr.length; m++) {
+      if (arr[m] < 0) {
+          negatives.push(arr[m]);
+      }
+  }
+  return negatives;
+  }
+console.log(filterPositive(arr))
