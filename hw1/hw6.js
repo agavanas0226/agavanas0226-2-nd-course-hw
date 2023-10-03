@@ -14,20 +14,21 @@ let jhoJho = [1,'', 3,'', 5,'', 10,'', 20];
 jhoJho = jhoJho.join('');
 console.log(jhoJho);
 // Задание 4
-let much = [
-    [1, 1, 1], 
-    [1, 1, 1], 
-    [1, 1, 1]
-];
-for (let item of much) {
-	for (let m = 0; m < item.length; m++) {
-		if (m === 0) {
-			console.log(`${item[m]}`);
-		} else {
-			console.log(`\t ${item[m]}`);
-		}
-	}
-}
+const Arr = [];
+
+for (let p = 0; p < 3; p++) {
+
+     Arr[p] = [];
+
+       for (let j = 1; j < 4; j++) {
+
+         Arr[p].push(1);
+
+       }
+
+     }
+
+console.log(Arr);
 // Задание 5
 const fifth = [1, 1, 1];
 console.log (fifth);
